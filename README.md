@@ -2,10 +2,10 @@
 
 
 ## Team Members
-1. Luca Bachmann (21-950-449)
-2. Indro Born (21-936-208)
-3. Matan Davidi (21-925-557)
-4. Steven Sbarbaro (21-923-628)
+1. Steven Sbarbaro
+2. Indro Born
+3. Matan Davidi
+4. Luca Bachmann
 
 ## Project Description 
 Mobility involves more than just transitioning between two points. It also comes with some associated costs, like time, money, and emissions. Depending on the person and the situation, you might prefer to use different means of transport to reach your destination. However it has always been hard to decide which means of transport is rationally the best one, and how it compares to the others.
