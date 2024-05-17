@@ -1,0 +1,45 @@
+/*body h1,
+body h2 {
+  margin-bottom: 0;
+}
+
+nav {
+  border-bottom: 1px solid var(--border-color);
+}
+
+body main {
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+
+  padding: var(--spacing) !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: var(--spacing);
+
+  & article {
+    margin: 0;
+    padding: var(--spacing);
+    & > header {
+      margin: calc(var(--spacing) * -1) calc(var(--spacing) * -1) var(--spacing);
+      padding: var(--spacing);
+    }
+  }
+}
+*/
+/* or .container if you are using a container div */
+
+/*this makes the image appear on the whole background*/
+
+body {
+  background-image: url("SwissMap2.png"); /* Replace with your image path */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Full height */
+  width: 100%; /* Full width */
+  min-height: 100vh;
+}

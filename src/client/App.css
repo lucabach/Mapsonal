@@ -1,0 +1,425 @@
+/*main colors*/
+:root {
+  --color1-color: rgb(255, 250, 240);
+  --color2-color: rgb(135, 135, 135);
+  --main-bg-color: rgb(211, 211, 211);
+
+  --actgreen: rgb(232, 236, 0);
+  --inactgreen: #b7ab00;
+
+  --actblue: rgb(20, 0, 200);
+  --inactblue: rgb(92, 103, 161);
+
+  --actred: rgb(190, 0, 0);
+  --inactred: rgb(160, 86, 86);
+
+  --actorange: rgb(230, 104, 0);
+  --inactorange: rgb(168, 115, 15);
+}
+
+/*App*/
+.headerBox {
+  position: fixed !important;
+  z-index: 10;
+  top: 0;
+  margin-right: 5% !important;
+  margin-left: 5% !important;
+  width: 90% !important;
+  background-color: var(--main-bg-color);
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.footerBox {
+  position: fixed !important;
+  z-index: 10;
+  bottom: 0;
+  margin-right: 5% !important;
+  margin-left: 5% !important;
+  width: 90% !important;
+  background-color: var(--main-bg-color);
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 5px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.MapContainer {
+  width: "100%";
+  z-index: 1;
+  position: fixed;
+  flex-grow: 1;
+  height: 100%; /* Adjust as per requirement */
+}
+.Footer {
+  position: fixed !important;
+}
+
+/*Header*/
+.form {
+  margin-bottom: 0px !important;
+}
+
+.roundBoxesHeader {
+  margin-top: 5px !important;
+  margin-bottom: 0px !important;
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+  border-radius: 30px !important;
+  background-color: var(--color1-color) !important;
+  font-size: large;
+}
+.searchButton {
+  border-color: var(--color2-color) !important;
+  margin-top: 5px !important;
+  border-radius: 30px !important;
+  background-color: var(--color2-color) !important;
+  height: 50px;
+}
+
+/*Footer*/
+.titleMainContent {
+  text-transform: capitalize;
+  color: var(--color2-color);
+  font-weight: bold;
+  font-size: large;
+  height: 28px;
+  width: 85%;
+  display: flex;
+  align-items: center;
+}
+
+.footerVeicles {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.transportAttiveButton {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 30px !important;
+}
+
+.transportPassiveButton {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 30px !important;
+  background-color: var(--color2-color);
+}
+
+.moreInfoButton {
+  position: absolute;
+  right: -5%;
+  top: -5%;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  border-radius: 25px !important;
+  background-color: var(--color2-color);
+}
+
+/*Footer -> InfoList */
+.roundBoxesFooter {
+  height: 30px;
+  position: relative;
+  left: 5%;
+  width: 98%;
+  margin-top: 5px !important;
+  margin-bottom: 0px !important;
+  margin: 0 auto;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  border-radius: 30px !important;
+  background-color: var(--color2-color);
+}
+
+/*Footer -> Graph */
+.inBox {
+  margin: 100;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.inCol {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  text-align: center;
+  justify-content: flex-end;
+  margin-bottom: 20;
+}
+.inGra {
+  width: 100%;
+  background-color: var(--color2-color);
+}
+.inAtt.n-th {
+  background-color: var(--color1-color) !important;
+}
+
+.passiveInfo {
+  color: var(--color2-color);
+  font-size: 2vh;
+  width: 9vh;
+}
+
+.activeInfo {
+  color: var(--color1-color);
+  font-size: 2vh;
+  width: 9vh;
+}
+
+.info1Font {
+  text-transform: capitalize;
+  color: var(--color1-color);
+  font-weight: bold;
+  font-size: medium;
+  display: flex;
+  align-items: center;
+}
+
+.attGreen {
+  background-color: var(--actgreen) !important;
+}
+.inattGreen {
+  background-color: var(--inactgreen) !important;
+}
+
+.attBlue {
+  background-color: var(--actblue) !important;
+}
+.inattBlue {
+  background-color: var(--inactblue) !important;
+}
+
+.attRed {
+  background-color: var(--actred) !important;
+}
+.inattRed {
+  background-color: var(--inactred) !important;
+}
+
+.attOrange {
+  background-color: var(--actorange) !important;
+}
+.inattOrange {
+  background-color: var(--inactorange) !important;
+}
+
+/*some style for app component*/
+.leaflet-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.moreInfoContainer {
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 10px;
+  background-color: var(--main-bg-color);
+}
+
+.bigHeader {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--main-bg-color);
+}
+
+/*the following are needed for the autocomplete in the header*/
+.autocomplete-container {
+  position: relative;
+}
+
+.autocomplete-list {
+  margin-top: 5px;
+  position: absolute;
+  top: 100%+30px; /* Position suggestions below the input */
+  left: 0;
+  z-index: 1; /* Ensure suggestions appear above other content */
+  background-color: var(--main-bg-color);
+  max-height: 150px;
+  overflow-y: auto;
+  width: 100%;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.autocompleteText {
+  margin: 2%;
+  width: 96%;
+  color: var(--color1-color);
+  background-color: rgb(190, 189, 189);
+  border-width: 0px !important;
+  border-radius: 10px;
+}
+
+.arrIcon {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+/*SingleTrainDisplay*/
+.Card_Car {
+  width: auto;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  background-color: var(--inactred);
+  color: black;
+  margin-bottom: 20px;
+}
+.Card_Foot {
+  width: auto;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  background-color: var(--inactgreen);
+  color: black;
+  margin-bottom: 20px;
+}
+.Card_Train {
+  width: auto;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  background-color: var(--inactblue);
+  color: black;
+  margin-bottom: 20px;
+}
+.Card_Bike {
+  width: auto;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  background-color: var(--inactorange);
+  color: black;
+  margin-bottom: 20px;
+}
+.Card {
+  width: auto;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  background-color: #baff39;
+  color: black;
+  margin-bottom: 20px;
+}
+.back {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.backImg {
+  width: 30px;
+  height: 30px;
+}
+.bigHeader {
+  font-size: large;
+  font-weight: bold;
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+.headerImg {
+  width: 30px;
+  height: 30px;
+}
+.CardData {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.line-container {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  height: 150px; /* Imposta l'altezza desiderata per la linea */
+}
+.rowclass {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  gap: 10;
+  justify-content: space-around;
+}
+.trainGenerals {
+  font-style: oblique;
+}
+.red {
+  color: red;
+}
+
+.line {
+  margin-top: 0;
+  width: 2px; /* Larghezza della linea verticale */
+  height: 100%; /* Altezza della linea uguale all'altezza del container */
+  background-color: black; /* Colore della linea */
+  position: absolute;
+  left: 50%; /* Posiziona la linea a metà dell'altezza del container */
+  transform: translateX(-50%); /* Centra la linea rispetto al container */
+}
+
+.start-point,
+.end-point {
+  z-index: 10;
+  position: absolute;
+  width: 10px; /* Larghezza dei punti */
+  height: 10px; /* Altezza dei punti */
+  background-color: red; /* Colore dei punti */
+  border-radius: 50%; /* Rende i punti circolari */
+}
+
+.start-point {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra il punto all'inizio della linea */
+}
+
+.end-point {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%); /* Centra il punto alla fine della linea*/
+}
+
+.headerMoreInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.secondMap {
+  position: absolute;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 80% !important;
+  top: 12vh !important;
+}
